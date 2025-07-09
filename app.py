@@ -1,11 +1,8 @@
 import git
 from flask import Flask, render_template, url_for, flash, redirect, request
 from forms import RegistrationForm
-from flask_behind_proxy import FlaskBehindProxy
 
 app = Flask(__name__)                    # this gets the name of the file so Flask knows it's name
-proxied = FlaskBehindProxy(app)
-app.config['SECRET_KEY'] = '830edfd2958ae36b57b3c4d2bb2ac783'
 
 @app.route("/")                          # this tells you the URL the method below is related to
 def hello_world():
