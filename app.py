@@ -4,7 +4,7 @@ app = Flask(__name__)                    # this gets the name of the file so Fla
 
 @app.route("/")                          # this tells you the URL the method below is related to
 def hello_world():
-    return "<p>Hello, World!</p>"        # this prints HTML to the webpage
+    return "<h1> Cosmetic Change </h1> <p>Hello, World!</p>"        # this prints HTML to the webpage
   
 @app.route("/update_server", methods=['POST'])
 def webhook():
